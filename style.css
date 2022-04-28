@@ -185,6 +185,16 @@ h2 {
     line-height: 18px;
 }
 
+.projects {
+    display: flex;
+    gap: 30px;
+}
+
+.project-1, .project-2 {
+    width: 461px;
+    height: 186px;
+}
+
 .project-1 div, .project-2 div {
     display: flex;
 }
