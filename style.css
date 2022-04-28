@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather+Sans:wght@400;500;700&family=Poppins:wght@300;600&family=Roboto+Serif:wght@100&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #22212C;
+
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: normal;
+
+    color: #837E9F;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: "aside main" "footer footer";
+    /*grid-template-columns: 348px 952px;*/
+    gap: 19px 60px;
+
+    padding: 40px 40px 20px;
+}
+
+aside {
+    grid-area: aside;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile, .links, .technologies, .experiences, .education, .my-projects, .project-1, .project-2, .recent-post, .post {
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.profile, .links, .technologies, .experiences, .education {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px 0 49px;
+}
+
+.profile img {
+    width: 128px;
+    height: 128px;
+
+    border: 2px solid #00FF00;
+    border-radius: 50%;
+
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+}
+
+.profile p{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+
+    margin-top: 10px;
+}
+
+.links {
+    justify-content: center;
+    gap: 20px;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    padding: 30px 40px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+
+    padding: 30px 20px 0;
+}
+
+.technology {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    padding: 20px 30px 30px;
+}
+
+.tech {
+    width: 86px;
+    height: 24px;
+
+    background: #CB92B1;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+ul {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    padding: 20px 60px 30px;
+}
+
+li p:nth-child(1) {
+    font-size: 12px;
+    font-weight: 100;
+}
+  
+li p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-areas: 
+        "my-projects my-projects" 
+        "project-1 project-2" 
+        "recent-post recent-post" 
+        "post post"
+    ;
+    gap: 30px;
+}
+
+.my-projects, .project-1, .project-2, .recent-post {
+    padding: 30px;
+}
+
+.my-projects {
+    grid-area: my-projects;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.my-projects a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.project-1 {
+    grid-area: project-1;
+}
+
+.project-2 {
+    grid-area: project-2;
+}
+
+.project-1 div, .project-2 div {
+    display: flex;
+}
+
+.project-1 img, .project-2 img {
+    width: 20px;
+    height: 20px;
+}
+
+.recent-post {
+    grid-area: recent-post;
+}
+
+.post {
+    grid-area: post;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 30px 30px 42px;
+}
+
+.post img {
+    width: 128px;
+    height: 128px;
+
+    border-radius: 50%;
+}
+/*
+.post-1 p:first-child {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.post-1 p:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-bottom: 59px;
+}
+*/
+.hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+footer {
+    grid-area: footer;
+    
+    display: flex;
+    justify-content: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
