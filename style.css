@@ -28,7 +28,7 @@ body {
 
     display: grid;
     grid-template-areas: "aside main" "footer footer";
-    /*grid-template-columns: 348px 952px;*/
+    grid-template-columns: 348px 952px;
     gap: 19px 60px;
 
     padding: 40px 40px 20px;
