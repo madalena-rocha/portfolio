@@ -29,6 +29,7 @@ body {
     display: grid;
     grid-template-areas: "aside main" "footer footer";
     grid-template-columns: 348px 952px;
+    
     gap: 19px 60px;
 
     padding: 40px 40px 20px;
@@ -157,13 +158,8 @@ li p:nth-child(2) {
 main {
     grid-area: main;
 
-    display: grid;
-    grid-template-areas: 
-        "my-projects my-projects" 
-        "project-1 project-2" 
-        "recent-post recent-post" 
-        "post post"
-    ;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
 }
 
@@ -172,8 +168,6 @@ main {
 }
 
 .my-projects {
-    grid-area: my-projects;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -191,14 +185,6 @@ h2 {
     line-height: 18px;
 }
 
-.project-1 {
-    grid-area: project-1;
-}
-
-.project-2 {
-    grid-area: project-2;
-}
-
 .project-1 div, .project-2 div {
     display: flex;
 }
@@ -208,13 +194,7 @@ h2 {
     height: 20px;
 }
 
-.recent-post {
-    grid-area: recent-post;
-}
-
 .post {
-    grid-area: post;
-
     display: flex;
     align-items: center;
     gap: 20px;
@@ -228,21 +208,7 @@ h2 {
 
     border-radius: 50%;
 }
-/*
-.post-1 p:first-child {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-}
 
-.post-1 p:nth-child(2) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-
-    margin-bottom: 59px;
-}
-*/
 .hashtags {
     display: flex;
     flex-wrap: wrap;
