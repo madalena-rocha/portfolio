@@ -11,6 +11,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 
     display: grid;
     grid-template-areas: "aside main" "footer footer";
-    grid-template-columns: 348px 952px;
+    grid-template-columns: 348px 66%;
 
     gap: 19px 60px;
 
@@ -95,8 +97,9 @@ h1 {
     padding: 30px 40px;
 }
 
-.link {
+.links a {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -193,11 +196,12 @@ h2 {
 }
 
 .project-1, .project-2 {
-    width: 461px;
+    width: 66%;
 }
 
-.folder {
+.projects a {
     display: flex;
+    gap: 16px;
 
     font-weight: 700;
     font-size: 16px;
@@ -206,13 +210,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-.folder img, .icons img {
+.projects img {
     width: 20px;
     height: 20px;
-}
-
-.folder a {
-    margin-right: 16px;
 }
 
 .projects p:nth-child(2) {
@@ -232,7 +232,7 @@ h2 {
     margin-top: 28px;
 }
 
-.icons p:nth-child(2), p:nth-child(4) {
+.icons p:nth-child(2), .icons p:nth-child(4), .icons p:nth-child(6) {
     margin-left: 8px;
 }
 
@@ -244,8 +244,7 @@ h2 {
     width: 15px;
     height: 15px;
 
-    margin-left: 141px;
-    margin-right: 8px;
+    margin-left: 57%;
 }
 
 .post {
@@ -268,7 +267,7 @@ h4 {
     line-height: 23px;
 }
 
-.post-1 p {
+.post p {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -277,9 +276,9 @@ h4 {
 .hashtags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0 10px;
 
-    margin-top: 39px;
+    margin-top: 28px;
 }
 
 footer {
@@ -291,4 +290,6 @@ footer {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+
+    padding: 0 0 20px;
 }
