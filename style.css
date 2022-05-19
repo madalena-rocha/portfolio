@@ -29,7 +29,7 @@ body {
     display: grid;
     justify-content: center;
     grid-template-areas: "aside main" "footer footer";
-    grid-template-columns: 348px 66%;
+    grid-template-columns: 34.8rem 95.2rem;
     gap: 19px 60px;
 
     padding: 40px 40px 20px;
@@ -43,7 +43,8 @@ aside {
     gap: 30px;
 }
 
-.profile, .links, .technologies, .experiences, .education, .my-projects, .project-1, .project-2, .recent-post, .post {
+.profile, .links, .technologies, .experiences, .education, .my-projects, 
+.project-1, .project-2, .project-3, .recent-post, .posts {
     background: #302F3D;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -166,7 +167,7 @@ main {
     gap: 30px;
 }
 
-.my-projects, .project-1, .project-2, .recent-post {
+.my-projects, .project-1, .project-2, .project-3, .recent-post {
     padding: 30px;
 }
 
@@ -193,7 +194,7 @@ h2 {
     gap: 30px;
 }
 
-.project-1, .project-2 {
+.project-1, .project-2, .project-3 {
     width: 66%;
 }
 
@@ -242,17 +243,17 @@ h2 {
     width: 15px;
     height: 15px;
 
-    margin-left: 57%;
+    margin-left: 18.1rem;
 }
 
-.post {
+.posts {
     display: flex;
     gap: 20px;
 
     padding: 30px 30px 42px;
 }
 
-.post img {
+.posts img {
     width: 128px;
     height: 128px;
 
@@ -265,7 +266,7 @@ h4 {
     line-height: 23px;
 }
 
-.post p {
+.posts p {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
