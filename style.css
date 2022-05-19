@@ -34,8 +34,8 @@ body {
     display: grid;
     justify-content: center;
     grid-template-areas: "aside main" "footer footer";
-    grid-template-columns: 34.8rem 95.2rem;
-    /*grid-template-columns: 34.8rem 66%;*/
+    /*grid-template-columns: 34.8rem 95.2rem;*/
+    grid-template-columns: 34.8rem 66%;
     gap: 1.9rem 6rem;
 
     margin: 4rem 4rem 2rem;
