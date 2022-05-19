@@ -3,6 +3,8 @@
     --text-color: #837E9F;
     --bg-cards: #302F3D;
     --bg-techs: #CB92B1;
+
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 * {
@@ -14,25 +16,30 @@
 }
 
 body {
-    background: #22212C;
+    width: 100%;
+    height: 100%;
+
+    background: var(--body-bg-color);
 
     font-family: 'Merriweather Sans', sans-serif;
     font-style: normal;
+    font-size: 1.6rem; /* 16px */
 
-    color: #837E9F;
+    color: var(--text-color);
 }
 
 .container{
-    width: 100vw;
-    height: 100vh;
+
 
     display: grid;
     justify-content: center;
     grid-template-areas: "aside main" "footer footer";
     grid-template-columns: 34.8rem 95.2rem;
-    gap: 19px 60px;
+    /*grid-template-columns: 34.8rem 66%;*/
+    gap: 1.9rem 6rem;
 
-    padding: 40px 40px 20px;
+    /*padding: 4rem 4rem 2rem;*/
+    margin: 4rem 4rem 2rem;
 }
 
 aside {
@@ -40,14 +47,14 @@ aside {
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .profile, .links, .technologies, .experiences, .education, .my-projects, 
 .project-1, .project-2, .project-3, .recent-post, .posts {
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
+    background: var(--bg-cards);
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
 }
 
 .profile, .links, .technologies, .experiences, .education {
@@ -59,79 +66,79 @@ aside {
     align-items: center;
     justify-content: center;
 
-    padding: 32px 0 49px;
+    padding: 3.2rem 0 4.9rem;
 }
 
 .profile img {
-    width: 128px;
-    height: 128px;
+    width: 12.8rem;
+    height: 12.8rem;
 
-    border: 2px solid #00FF00;
+    border: 0.2rem solid #00FF00;
     border-radius: 50%;
 
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 h1 {
     font-weight: 700;
-    font-size: 23px;
-    line-height: 29px;
+    font-size: 2.3rem;
+    line-height: 2.9rem;
 }
 
 .profile p{
     font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
 
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .links {
-    gap: 20px;
+    gap: 2rem;
 
     font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
 
-    padding: 30px 40px;
+    padding: 3rem 4rem;
 }
 
 .links a {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 
-    padding: 30px 20px 0;
+    padding: 3rem 2rem 0;
 }
 
 .technology {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1.5rem;
 
-    padding: 20px 30px 30px;
+    padding: 2rem 3rem 3rem;
 }
 
 .tech {
-    width: 86px;
-    height: 24px;
+    width: 8.6rem;
+    height: 2.4rem;
 
-    background: #CB92B1;
-    border-radius: 30px;
+    background: var(--bg-techs);
+    border-radius: 3rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-weight: 700;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 1rem;
+    line-height: 1.3rem;
     text-transform: uppercase;
 
     color: #000000;
@@ -139,23 +146,23 @@ h3 {
 
 ul {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 
-    padding: 20px 60px 30px;
+    padding: 2rem 6rem 3rem;
 }
 
 li p:nth-child(1) {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 100;
 }
   
 li p:nth-child(2) {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -164,11 +171,11 @@ main {
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .my-projects, .project-1, .project-2, .project-3, .recent-post {
-    padding: 30px;
+    padding: 3rem;
 }
 
 .my-projects {
@@ -179,46 +186,46 @@ main {
 
 h2 {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 .my-projects a {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 3rem;
 }
 
 .project-1, .project-2, .project-3 {
-    width: 66%;
+    width: 46.1rem;
 }
 
 .projects a {
     display: flex;
-    gap: 16px;
+    gap: 1.6rem;
 
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1.6rem;
+    line-height: 2rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .projects img {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .projects p:nth-child(2) {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 .icons {
@@ -226,59 +233,61 @@ h2 {
     align-items: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 
-    margin-top: 28px;
+    margin-top: 2.8rem;
 }
 
 .icons p:nth-child(2), .icons p:nth-child(4), .icons p:nth-child(6) {
-    margin-left: 8px;
+    margin-left: 0.8rem;
 }
 
 .icons img:nth-child(3) {
-    margin-left: 16px;
+    margin-left: 1.6rem;
 }
 
 .icons img:nth-child(5) {
-    width: 15px;
-    height: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
 
     margin-left: 18.1rem;
+    /*margin-left: 57%;*/
+    
 }
 
 .posts {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 
-    padding: 30px 30px 42px;
+    padding: 3rem 3rem 4.2rem;
 }
 
 .posts img {
-    width: 128px;
-    height: 128px;
+    width: 12.8rem;
+    height: 12.8rem;
 
     border-radius: 50%;
 }
 
 h4 {
     font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
 }
 
 .posts p {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .hashtags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 10px;
+    gap: 0 1rem;
 
-    margin-top: 28px;
+    margin-top: 2.8rem;
 }
 
 footer {
@@ -288,8 +297,8 @@ footer {
     justify-content: center;
 
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
 
-    padding: 0 0 20px;
+    padding: 0 0 2rem;
 }
