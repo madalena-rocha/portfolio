@@ -32,8 +32,8 @@ body {
     display: grid;
     justify-content: center;
     grid-template-areas: "aside main" "footer footer";
-    /*grid-template-columns: 34.8rem 95.2rem;*/
-    grid-template-columns: 34.8rem 66%;
+    grid-template-columns: 34.8rem 95.2rem;
+    /* grid-template-columns: 34.8rem 66%; */
     gap: 1.9rem 6rem;
 
     margin: 4rem 4rem 2rem;
@@ -200,8 +200,8 @@ h2 {
 }
 
 .project-1, .project-2, .project-3 {
-    /* width: 46.1rem; */
-    width: 33%
+    width: 46.1rem;
+    /* width: 66% */
 }
 
 .projects a {
