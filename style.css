@@ -48,7 +48,7 @@ aside {
 }
 
 .profile, .links, .technologies, .experiences, .education, .my-projects, 
-.project-1, .project-2, .project-3, .recent-post, .posts {
+.project-1, .project-2, .project-3, project-4, .recent-post, .posts {
     background: var(--bg-cards);
     box-shadow: 0.2rem 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
@@ -171,7 +171,7 @@ main {
     gap: 3rem;
 }
 
-.my-projects, .project-1, .project-2, .project-3, .recent-post {
+.my-projects, .project-1, .project-2, .project-3, project-4, .recent-post {
     padding: 3rem;
 }
 
@@ -199,9 +199,8 @@ h2 {
     gap: 3rem;
 }
 
-.project-1, .project-2, .project-3 {
+.project-1, .project-2, .project-3, project-4 {
     width: 46.1rem;
-    /* width: 66% */
 }
 
 .projects a {
@@ -249,9 +248,7 @@ h2 {
     width: 1.5rem;
     height: 1.5rem;
 
-    margin-left: 18.1rem;
-    /*margin-left: 57%;*/
-    
+    margin-left: 18.1rem;  
 }
 
 .posts {
